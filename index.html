@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+
+    <!--Stylesheet link start-->
+    <link rel="stylesheet" href="style.css">
+    <!--Stylesheet link End-->
+
+</head>
+<body>
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        <form action="">
+            
+            <!--First Input Start-->
+            <div class="control">
+                <p>Enter Bill Amount</p>
+                <p class="input">
+                    &#8377;
+                    <input type="number" name="" id="totalBill" placeholder="000">
+                </p>
+            </div>
+            <!--First Input End-->
+
+            <!--Second Input Start-->
+            <div class="control">
+                <p>Choose Your Tip</p>
+                <select name="" id="tipPercent">
+                    <option disabled selected value="0">Select</option>
+                    <option value="0.30">30%</option>
+                    <option value="0.20">20%</option>
+                    <option value="0.15">15%</option>
+                    <option value="0.10">10%</option>
+                    <option value="0.05">5%</option>
+                </select>
+            </div>
+            <!--Second Input End-->
+        </form>
+
+        <!--Third Input Start-->
+        <p>Split the bill into</p>
+        <input type="number" name="" id="split" placeholder="0"> 
+        </br>
+        <button id="calculate">Calculate</button>
+        <!--Third Input End-->
+
+        <!--Total Tip Result Start-->
+        <div class="totalTip">
+            <p>Total Per Person</p>
+            <p class="tip">&#8377; <span id="tip">0.00</span></p> 
+        </div>
+        <!--Total Tip Result End-->
+
+    </div>
+
+    <!--Javascript Link Start-->
+    <script type="text/javascript" src="script.js"></script>
+    <!--Javascript Link End-->
+
+</body>
+</html>
